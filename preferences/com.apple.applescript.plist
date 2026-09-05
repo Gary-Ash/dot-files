@@ -311,9 +311,7 @@
 		<string>file:///System/Library/CoreServices/System%20Events.app/</string>
 		<key>System Events.app</key>
 		<string>file:///System/Library/CoreServices/System%20Events.app/</string>
-		<key>myAppName to launch
-on idle
-	tell application </key>
+		<key>myAppName to launchon idle	tell application </key>
 		<string>file:///System/Applications/Utilities/Terminal.app/</string>
 	</dict>
 </dict>

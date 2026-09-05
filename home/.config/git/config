@@ -5,7 +5,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  23-Mar-2026  2:06pm
-# Modified :   5-Sep-2026  6:47pm
+# Modified :   5-Sep-2026  7:39pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -360,4 +360,7 @@
     path = ~/.config/git/config.local
 
 [includeIf "gitdir:~/Developer/GeeDblA/"]
+    path = ~/.config/git/config.geedbla
+
+[includeIf "gitdir:/opt/geedbla/"]
     path = ~/.config/git/config.geedbla

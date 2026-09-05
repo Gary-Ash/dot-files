@@ -1,5 +1,5 @@
-[user]
-	name = Gary Ash
-	email = gary.ash@icloud.com
+# The identity lives in ~/.config/git/config and the includes at the bottom of
+# it. Git reads this file after that one, so anything set here would win --
+# keep it to settings that belong nowhere else.
 [pager]
 	diff = diffnav

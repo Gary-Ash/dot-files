@@ -14,6 +14,23 @@
 	<false/>
 	<key>ApplicationAppearanceMode</key>
 	<integer>0</integer>
+	<key>ApplicationAutoSaveState</key>
+	<dict>
+		<key>ApplicationBuildNumber</key>
+		<string>16A90</string>
+		<key>DisplayConfiguration</key>
+		<string>displays([(0, 0), (2560, 1440)])</string>
+		<key>OpenDocuments</key>
+		<dict/>
+		<key>OpenWindows</key>
+		<array/>
+		<key>UntitledWindowsState</key>
+		<dict/>
+		<key>com.barebones.DocumentFormatVersion</key>
+		<integer>2</integer>
+		<key>com.barebones.DocumentType</key>
+		<string>ApplicationState</string>
+	</dict>
 	<key>ApplicationDidStartClean</key>
 	<true/>
 	<key>ApplyTextTransformPanelSavedOperation</key>
@@ -60,6 +77,8 @@
 	<false/>
 	<key>BBEditRegisteredOwner:16.0</key>
 	<string>Gary Ash</string>
+	<key>BBEditSerialNumber:15.0</key>
+	<string>BEE150-VAT69-QKSZ2-JQZW8</string>
 	<key>BBEditSerialNumber:16.0</key>
 	<string>BEE160-ATURS-ZLKCK-QZWXY</string>
 	<key>BBEditorFont</key>
@@ -383,6 +402,8 @@
 		<key>ServerLanguageID</key>
 		<string></string>
 	</dict>
+	<key>LastLaunchOSVersion</key>
+	<string>Version 26.6.2 (Build 25G83)</string>
 	<key>ListDisplayFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -413,6 +434,22 @@
 	<string>{1314, 958}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
 	<true/>
+	<key>NSOSPLastRootDirectory</key>
+	<data>
+	Ym9va4ACAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAGABAAAEAAAAAwMAAAAAACAFAAAAAQEAAFVzZXJzAAAABwAAAAEB
+	AABnYXJ5YXNoAAgAAAABBgAAEAAAACAAAAAIAAAABAMAAMxQAAAAAAAACAAAAAQDAAB0
+	AVQBAAAAAAgAAAABBgAAQAAAAFAAAAAIAAAAAAQAAEHHgtP73GoCGAAAAAECAAACAAAA
+	AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAAAAAAAAAAAEAAAAAwMA
+	APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
+	gpbnAAAACAAAAAAEAABByBa0ZYAAACQAAAABAQAARUMwN0E2MTktRDcxNi00MTFGLUE3
+	NkUtMkI1RTU2QkRBQjM4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+	AQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAAAwAAAAAAAAAAUQAABgAAAAAAAA
+	ABAQAACAAAAAAAAAAEAQAABwAAAAAAAAAAIgAABUAQAAAAAAAAUgAADEAAAAAAAAABAg
+	AADUAAAAAAAAABEgAAAIAQAAAAAAABIgAADoAAAAAAAAABMgAAD4AAAAAAAAACAgAAA0
+	AQAAAAAAADAgAACgAAAAAAAAAAHAAACoAAAAAAAAABHAAAAgAAAAAAAAABLAAAC4AAAA
+	AAAAAAHQAACgAAAAAAAAABDQAAAEAAAAAAAAAA==
+	</data>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
 		<string>0.000000, 0.000000, 230.000000, 281.000000, NO, NO</string>
@@ -612,6 +649,8 @@
 	<true/>
 	<key>PinchZoomChangesMagnification</key>
 	<true/>
+	<key>PreferencesSnapshotDate</key>
+	<date>2026-09-05T23:21:20Z</date>
 	<key>PrintColorSyntax</key>
 	<false/>
 	<key>Projects</key>
@@ -622,6 +661,282 @@
 	</array>
 	<key>Recent Folders</key>
 	<true/>
+	<key>RecentItemsData</key>
+	<dict>
+		<key>Text</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<date>2026-09-05T23:21:08Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va4gDAAAAAAUQQAAAACfqqDjuum5x/w5p
+					De50KPHNrOQg7IXk8drQq0EnSsyNAAAAAAAA
+					AAAAAAAAAAAAAHQCAAAEAAAAAwMAAAAIACgF
+					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
+					YXNoAAkAAAABAQAARGV2ZWxvcGVyAAAABwAA
+					AAEBAABHZWVEYmxBAAgAAAABAQAAZG90Zmls
+					ZXMEAAAAAQEAAGhvbWUHAAAAAQEAAC5jb25m
+					aWcAAwAAAAEBAABnaXQABgAAAAEBAABjb25m
+					aWcAACQAAAABBgAAEAAAACAAAAAwAAAARAAA
+					AFQAAABkAAAAcAAAAIAAAACMAAAACAAAAAQD
+					AADMUAAAAAAAAAgAAAAEAwAAdAFUAQAAAAAI
+					AAAABAMAAAZ1VQEAAAAACAAAAAQDAAAIdVUB
+					AAAAAAgAAAAEAwAASRSbBgAAAAAIAAAABAMA
+					AKkWmwYAAAAACAAAAAQDAADUFpsGAAAAAAgA
+					AAAEAwAADRebBgAAAAAIAAAABAMAALsXmwYA
+					AAAAJAAAAAEGAADIAAAA2AAAAOgAAAD4AAAA
+					CAEAABgBAAAoAQAAOAEAAEgBAAAIAAAAAAQA
+					AEHIJmnBAAAAGAAAAAECAAABAAAAAAAAAA8A
+					AAAAAAAAAAAAAAAAAAAIAAAABAMAAAcAAAAA
+					AAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxl
+					Oi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAA
+					AAQDAAAAkIKW5wAAAAgAAAAABAAAQcgWtGWA
+					AAAkAAAAAQEAAEVDMDdBNjE5LUQ3MTYtNDEx
+					Ri1BNzZFLTJCNUU1NkJEQUIzOBgAAAABAgAA
+					gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
+					AAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEA
+					AAAAAAAAEAAAAAQQAACcAAAAAAAAAAUQAABY
+					AQAAAAAAABAQAACUAQAAAAAAAEAQAACEAQAA
+					AAAAAAIgAABgAgAAAAAAAAUgAADQAQAAAAAA
+					ABAgAADgAQAAAAAAABEgAAAUAgAAAAAAABIg
+					AAD0AQAAAAAAABMgAAAEAgAAAAAAACAgAABA
+					AgAAAAAAADAgAABsAgAAAAAAAAHAAAC0AQAA
+					AAAAABHAAAAgAAAAAAAAABLAAADEAQAAAAAA
+					ABDQAAAEAAAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/Developer/GeeDblA/dotfiles/home/.config/git/config</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>config</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/Developer/GeeDblA/dotfiles/home/.config/git/config</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2026-09-05T23:09:21Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9vaywDAAAAAAUQQAAAAFymtyMwOQvc7ZhR
+					KteDsxTLDQtnbcl7S4sMWEce06zOAAAAAAAA
+					AAAAAAAAAAAAAAwCAAAEAAAAAwMAAAAIACgF
+					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
+					YXNoAAcAAAABAQAALmNvbmZpZwADAAAAAQEA
+					AHpzaAANAAAAAQEAAGZ1bmN0aW9ucy56c2gA
+					AAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABM
+					AAAACAAAAAQDAADMUAAAAAAAAAgAAAAEAwAA
+					dAFUAQAAAAAIAAAABAMAAHYBVAEAAAAACAAA
+					AAQDAACGAVQBAAAAAAgAAAAEAwAADx2yBAAA
+					AAAUAAAAAQYAAIAAAACQAAAAoAAAALAAAADA
+					AAAACAAAAAAEAABBx+x/ZgIz+BgAAAABAgAA
+					AQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
+					AAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgA
+					AAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
+					dG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAA
+					AAQAAEHIFrRlgAAAJAAAAAEBAABFQzA3QTYx
+					OS1ENzE2LTQxMUYtQTc2RS0yQjVFNTZCREFC
+					MzgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAA
+					AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
+					GgAAAAEBAABOU1VSTERvY3VtZW50SWRlbnRp
+					ZmllcktleQAABAAAAAMDAACNBgAA2AAAAP7/
+					//8BAAAAAAAAABEAAAAEEAAAZAAAAAAAAAAF
+					EAAA0AAAAAAAAAAQEAAA/AAAAAAAAABAEAAA
+					7AAAAAAAAAACIAAAyAEAAAAAAAAFIAAAOAEA
+					AAAAAAAQIAAASAEAAAAAAAARIAAAfAEAAAAA
+					AAASIAAAXAEAAAAAAAATIAAAbAEAAAAAAAAg
+					IAAAqAEAAAAAAAAwIAAA1AEAAAAAAAABwAAA
+					HAEAAAAAAAARwAAAIAAAAAAAAAASwAAALAEA
+					AAAAAAAQ0AAABAAAAAAAAADcAQCAAAIAAAAA
+					AAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/.config/zsh/functions.zsh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>functions.zsh</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/.config/zsh/functions.zsh</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2026-09-05T23:07:37Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va8QCAAAAAAUQQAAAAIUuiSW3qsJ3sdYz
+					1OsyVra3KdS5P3p0bL9cOy2sR1W/AAAAAAAA
+					AAAAAAAAAAAAAMgBAAAEAAAAAwMAAAAIACgD
+					AAAAAQEAAG9wdAAHAAAAAQEAAGdlZWRibGEA
+					BwAAAAEBAABzY3JpcHRzAA4AAAABAQAAdXBk
+					YXRlLWRvdHMuc2gAABAAAAABBgAAEAAAABwA
+					AAAsAAAAPAAAAAgAAAAEAwAA1VAAAAAAAAAI
+					AAAABAMAANN6FAAAAAAACAAAAAQDAAD0ehQA
+					AAAAAAgAAAAEAwAABFB7BgAAAAAQAAAAAQYA
+					AGwAAAB8AAAAjAAAAJwAAAAIAAAAAAQAAEHI
+					I7gZAAAAGAAAAAECAAABAAAAAAAAAA8AAAAA
+					AAAAAAAAAAAAAAAIAAAAAQkAAGZpbGU6Ly8v
+					DAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
+					AACQgpbnAAAACAAAAAAEAABByBa0ZYAAACQA
+					AAABAQAARUMwN0E2MTktRDcxNi00MTFGLUE3
+					NkUtMkI1RTU2QkRBQjM4GAAAAAECAACBAAAA
+					AQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEA
+					AC8AAAAAAAAAAQUAABoAAAABAQAATlNVUkxE
+					b2N1bWVudElkZW50aWZpZXJLZXkAAAQAAAAD
+					AwAA2gQAALQAAAD+////AQAAAAAAAAAOAAAA
+					BBAAAFQAAAAAAAAABRAAAKwAAAAAAAAAEBAA
+					ANQAAAAAAAAAQBAAAMQAAAAAAAAAAiAAAIQB
+					AAAAAAAABSAAAPQAAAAAAAAAECAAAAQBAAAA
+					AAAAESAAADgBAAAAAAAAEiAAABgBAAAAAAAA
+					EyAAACgBAAAAAAAAICAAAGQBAAAAAAAAMCAA
+					AJABAAAAAAAAENAAAAQAAAAAAAAAmAEAgLwB
+					AAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///opt/geedbla/scripts/update-dots.sh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>update-dots.sh</string>
+				<key>URL</key>
+				<string>file:///opt/geedbla/scripts/update-dots.sh</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2026-09-05T23:06:01Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va/ACAAAAAAUQQAAAAICV0z6+JhrTLRBE
+					AqssRsa5MWFvZGb6dzlPUpPoVyf7AAAAAAAA
+					AAAAAAAAAAAAANwBAAAEAAAAAwMAAAAIACgF
+					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
+					YXNoAAcAAAABAQAALmNvbmZpZwADAAAAAQEA
+					AGdpdAAOAAAAAQEAAGNvbmZpZy5nZWVkYmxh
+					AAAUAAAAAQYAABAAAAAgAAAAMAAAAEAAAABM
+					AAAACAAAAAQDAADMUAAAAAAAAAgAAAAEAwAA
+					dAFUAQAAAAAIAAAABAMAAHYBVAEAAAAACAAA
+					AAQDAACLAVQBAAAAAAgAAAAEAwAAg+CaBgAA
+					AAAUAAAAAQYAAIAAAACQAAAAoAAAALAAAADA
+					AAAACAAAAAAEAABByCZn9cGCaBgAAAABAgAA
+					AQAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAA
+					AAQDAAADAAAAAAAAAAQAAAADAwAA9QEAAAgA
+					AAABCQAAZmlsZTovLy8MAAAAAQEAAE1hY2lu
+					dG9zaCBIRAgAAAAEAwAAAJCClucAAAAIAAAA
+					AAQAAEHIFrRlgAAAJAAAAAEBAABFQzA3QTYx
+					OS1ENzE2LTQxMUYtQTc2RS0yQjVFNTZCREFC
+					MzgYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAA
+					AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAA
+					zAAAAP7///8BAAAAAAAAABAAAAAEEAAAZAAA
+					AAAAAAAFEAAA0AAAAAAAAAAQEAAA/AAAAAAA
+					AABAEAAA7AAAAAAAAAACIAAAyAEAAAAAAAAF
+					IAAAOAEAAAAAAAAQIAAASAEAAAAAAAARIAAA
+					fAEAAAAAAAASIAAAXAEAAAAAAAATIAAAbAEA
+					AAAAAAAgIAAAqAEAAAAAAAAwIAAA1AEAAAAA
+					AAABwAAAHAEAAAAAAAARwAAAIAAAAAAAAAAS
+					wAAALAEAAAAAAAAQ0AAABAAAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/.config/git/config.geedbla</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>config.geedbla</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/.config/git/config.geedbla</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2026-09-05T23:06:00Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9vayQDAAAAAAUQQAAAALChj/gQlVq+onrp
+					HNQiTHnc72Q6Z+T6VGcdp8tUWw4SAAAAAAAA
+					AAAAAAAAAAAAAAQCAAAEAAAAAwMAAAAIACgF
+					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
+					YXNoAAcAAAABAQAALmNvbmZpZwADAAAAAQEA
+					AGdpdAAGAAAAAQEAAGNvbmZpZwAAFAAAAAEG
+					AAAQAAAAIAAAADAAAABAAAAATAAAAAgAAAAE
+					AwAAzFAAAAAAAAAIAAAABAMAAHQBVAEAAAAA
+					CAAAAAQDAAB2AVQBAAAAAAgAAAAEAwAAiwFU
+					AQAAAAAIAAAABAMAAGyHkAMAAAAAFAAAAAEG
+					AAB4AAAAiAAAAJgAAACoAAAAuAAAAAgAAAAA
+					BAAAQcfL/sZX1qkYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAACQgpbnAAAACAAAAAAEAABByBa0
+					ZYAAACQAAAABAQAARUMwN0E2MTktRDcxNi00
+					MTFGLUE3NkUtMkI1RTU2QkRBQjM4GAAAAAEC
+					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAA
+					TlNVUkxEb2N1bWVudElkZW50aWZpZXJLZXkA
+					AAQAAAADAwAAmgUAANgAAAD+////AQAAAAAA
+					AAARAAAABBAAAFwAAAAAAAAABRAAAMgAAAAA
+					AAAAEBAAAPQAAAAAAAAAQBAAAOQAAAAAAAAA
+					AiAAAMABAAAAAAAABSAAADABAAAAAAAAECAA
+					AEABAAAAAAAAESAAAHQBAAAAAAAAEiAAAFQB
+					AAAAAAAAEyAAAGQBAAAAAAAAICAAAKABAAAA
+					AAAAMCAAAMwBAAAAAAAAAcAAABQBAAAAAAAA
+					EcAAACAAAAAAAAAAEsAAACQBAAAAAAAAENAA
+					AAQAAAAAAAAA1AEAgPgBAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/.config/git/config</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>config</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/.config/git/config</string>
+			</dict>
+		</array>
+	</dict>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
 	<key>Results Browsers</key>
@@ -644,6 +959,8 @@
 	<string>sed 's/,/,\n/g'</string>
 	<key>RunUnixCommand_OutputMode</key>
 	<integer>0</integer>
+	<key>SULastCheckedDate</key>
+	<date>2026-09-05T20:11:39Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_CaseSensitive</key>
