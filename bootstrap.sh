@@ -96,7 +96,7 @@ find . -path ./.git -prune -o -type d -exec chmod 755 {} +
 
 # the blanket 600 above strips the execute bit from everything meant to run
 find . -path ./.git -prune -o -type f \( -name "*.sh" -o -name "*.pl" \) -exec chmod 755 {} +
-find "home/.config/git/template/hooks" -type f -exec chmod 755 {} +
+find "home/.config/git/hooks" -type f -exec chmod 755 {} +
 find "BBEdit/Text Filters" -type f -exec chmod 755 {} +
 
 mkdir -p "$HOME/Library/Script Libraries"

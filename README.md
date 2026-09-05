@@ -196,8 +196,17 @@ on every startup.
 
 ## Git Configuration
 
-`~/.gitconfig` holds only identity and the `diffnav` pager; the substance is in
+`~/.gitconfig` holds only the `diffnav` pager; the substance is in
 `~/.config/git/config`.
+
+- **Identity** — `user.name` is set once in `~/.config/git/config`, the e-mail
+  address is not. Two includes at the bottom of that file supply it instead:
+  `config.local`, which is this machine's own file and is not part of this
+  repository, and `config.geedbla`, which an `includeIf` pulls in for anything
+  under `~/Developer/GeeDblA` so my own repositories are signed with my own
+  address. `user.useConfigOnly` is on, so a repository that matches neither
+  include refuses the commit rather than inventing a `username@hostname`
+  address.
 
 - **Signing** — SSH-format commit and tag signing with `~/.ssh/id_ed25519.pub`,
   `commit.gpgsign` and `tag.gpgsign` both on.
@@ -215,8 +224,10 @@ on every startup.
   `textconv` for AppleScript, UTF-16, plists, and binaries.
 - **URL shorthands** — `gh:` and `gist:`.
 
-`init.templateDir` points at `~/.config/git/template`, so every new repository
-gets two hooks:
+`config.geedbla` sets `core.hooksPath` to `~/.config/git/hooks`, so my
+repositories share one copy of the hooks rather than each getting a snapshot at
+`git init` time. Editing a hook takes effect everywhere at once, and work that
+lives outside `~/Developer/GeeDblA` never sees them. There are two:
 
 | Hook | Language | Behavior |
 |------|----------|----------|

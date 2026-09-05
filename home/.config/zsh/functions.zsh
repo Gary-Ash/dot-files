@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   1-Sep-2026  4:10pm
+# Modified :   5-Sep-2026  7:09pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -25,7 +25,7 @@ fi
 #*****************************************************************************************
 update-dotfiles() {
 	if /opt/geedbla/scripts/update-dots.sh; then
-		cd ~/Downloads/dotfiles
+		cd "$HOME/Developer/GeeDblA/dotfiles"
 	fi
 }
 

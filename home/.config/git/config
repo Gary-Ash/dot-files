@@ -5,7 +5,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  23-Mar-2026  2:06pm
-# Modified :  24-Apr-2026  8:38pm
+# Modified :   5-Sep-2026  6:47pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -15,7 +15,13 @@
 #*****************************************************************************************
 [user]
     name       = Gary Ash
-    email      = gary.ash@icloud.com
+
+    # The e-mail address is not set here — it comes from the includes at the
+    # bottom of this file and depends on where the repository lives
+
+    # Never fall back to a guessed username@hostname address. If neither include
+    # supplies an e-mail, git refuses to commit rather than inventing one
+    useConfigOnly = true
 
     # SSH signing key (modern alternative to GPG keys)
     signingkey = ~/.ssh/id_ed25519.pub
@@ -72,9 +78,6 @@
 [init]
     # Default branch name
     defaultBranch = main
-
-    # Template directory for new repos
-    templateDir = ~/.config/git/template
 
 [protocol]
     version = 2
@@ -345,3 +348,16 @@
 [url "https://gist.github.com/"]
     insteadOf = gist:
 
+#*****************************************************************************************
+# Location dependent configuration
+#
+# These come last so that they win over everything above. config.local is not
+# part of the dotfiles repository — it is this machine's file and holds the
+# e-mail address used for work that is not mine. Repositories under
+# ~/Developer/GeeDblA are then switched back to my own identity and my hooks.
+#*****************************************************************************************
+[include]
+    path = ~/.config/git/config.local
+
+[includeIf "gitdir:~/Developer/GeeDblA/"]
+    path = ~/.config/git/config.geedbla

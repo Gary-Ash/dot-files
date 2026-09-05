@@ -1,0 +1,21 @@
+#*****************************************************************************************
+# config.geedbla
+#
+# The git configuration for my own repositories — everything under
+# ~/Developer/GeeDblA. Pulled in by the includeIf at the bottom of config, so it
+# only takes effect for repositories that live there
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :   5-Sep-2026  6:30pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+[user]
+    email = gary.ash@icloud.com
+
+[core]
+    # My hooks run only here. hooksPath replaces the repository's own .git/hooks
+    # rather than copying anything into it, so editing a hook takes effect
+    # everywhere at once and repositories elsewhere never see them
+    hooksPath = ~/.config/git/hooks
