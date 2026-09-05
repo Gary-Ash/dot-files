@@ -1,6 +1,6 @@
 ---
 name: commit
-description: Generate Git commit messages following project conventions. Use when the user wants to commit changes or asks for a commit message. Analyzes staged/unstaged changes and produces properly formatted commit messages with tags, Title Case summaries, and prose bodies.
+description: Generate Git commit messages following project conventions. Use when the user wants to commit changes or asks for a commit message. Analyzes staged/unstaged changes and produces properly formatted commit messages with tags, capitalized summaries, and prose bodies.
 allowed-tools: Read, Bash, Grep, Glob, AskUserQuestion
 argument-hint: [description of changes]
 ---
@@ -13,7 +13,7 @@ The message is always shown to the user for approval before any commit is made.
 ## Commit Message Format
 
 ```
-[TAG] Title Cased Short Summary
+[TAG] Short summary opening with a capital
 
 Detailed description of the change, written in prose and wrapped at
 72 characters.
@@ -40,7 +40,8 @@ No tag, no body.
 ## Summary Line Rules
 
 - Must begin with a tag in square brackets (except "Initial commit")
-- Must be Title Cased
+- Must open with a capital letter; the words after it are free, so a lower case
+  tool or file name (`ps`, `pgrep`, `lproj`) stays as it is written
 - Must be short and concise
 - Must NOT end with a period
 
@@ -63,7 +64,7 @@ No tag, no body.
 7. Write the message to `.git/COMMIT_EDITMSG` using a quoted HEREDOC:
    ```
    cat > "$(git rev-parse --git-dir)/COMMIT_EDITMSG" <<'EOF'
-   [TAG] Title Cased Short Summary
+   [TAG] Short summary opening with a capital
 
    Detailed description of the change.
    EOF

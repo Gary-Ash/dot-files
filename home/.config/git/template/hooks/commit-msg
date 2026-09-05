@@ -6,8 +6,8 @@
 # the editor so a malformed message can be repaired in place
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :   2-Aug-2026  7:33pm
-# Modified :
+# Created  :   1-Sep-2026  4:42pm
+# Modified :   5-Sep-2026  4:53pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -20,13 +20,6 @@ my $MAX_ATTEMPTS = 5;
 my $MARKER       = '# commit-msg:';
 
 my @TAGS = ('BUG FIX', 'FEATURE', 'REFACTOR', 'TEST CODE', 'TIDY');
-
-# words a title case summary is allowed to leave lower case, except as the first
-# or the last word of the summary
-my %MINOR_WORDS = map { $_ => 1 } qw(
-    a an the and but or nor for so yet at by in into of off on onto out over per
-    to up upon via vs with from
-);
 
 my $msgfile = shift(@ARGV);
 die("usage: commit-msg <message file>\n") unless defined($msgfile) && length($msgfile);
@@ -132,7 +125,7 @@ sub strip_comments {
         push(@message, $line);
     }
 
-    pop(@message) while @message && $message[-1] eq '';
+    pop(@message)   while @message && $message[-1] eq '';
     shift(@message) while @message && $message[0] eq '';
 
     return @message;
@@ -183,9 +176,7 @@ sub check_subject {
     my @errors;
 
     if ($subject !~ /^\[([A-Z][A-Z ]*)\](.*)$/) {
-        return (
-            'the summary line must begin with a tag, one of ' . join(', ', map { "[$_]" } @TAGS),
-        );
+        return ('the summary line must begin with a tag, one of ' . join(', ', map { "[$_]" } @TAGS),);
     }
 
     my ($tag, $rest) = ($1, $2);
@@ -210,50 +201,39 @@ sub check_subject {
 
     my $length = length($subject);
     push(@errors, "the summary line is $length characters, keep it inside $MAX_LINE")
-        if $length > $MAX_LINE;
+      if $length > $MAX_LINE;
 
-    push(@errors, check_title_case($summary));
+    push(@errors, check_capitalization($summary));
     return @errors;
 }
 
 #*****************************************************************************************
-# title case, every word carries a capital except the small joining words, which
-# must still be capitalized when they open or close the summary
+# capitalization, the summary has to open with a capital and the rest of it is the
+# author's business - a summary is often about ps, pgrep or awk, and a tool wearing
+# its own lower case name is not a mistake to be corrected
 #*****************************************************************************************
-sub check_title_case {
+sub check_capitalization {
     my ($summary) = @_;
 
-    my @words = grep { length } split(/\s+/, $summary);
-    return () unless @words;
+    my ($word) = grep { length } split(/\s+/, $summary);
+    return () unless defined($word);
 
-    my @offenders;
-    for my $index (0 .. $#words) {
-        my $word = $words[$index];
+    # code spans, options, paths, versions and names that carry their own
+    # capitalization are left alone
+    return () if $word =~ /[`'"]/;
+    return () if $word =~ /\d/;
+    return () if $word =~ /[A-Z]/;
 
-        # code spans, options, paths, versions and names that carry their own
-        # capitalization are left alone
-        next if $word =~ /[`'"]/;
-        next if $word =~ /\d/;
-        next if $word =~ /[A-Z]/;
+    $word =~ s/^[^\p{L}]+//;
+    $word =~ s/[^\p{L}]+$//;
+    return () unless length($word);
 
-        $word =~ s/^[^\p{L}]+//;
-        $word =~ s/[^\p{L}]+$//;
-        next unless length($word);
+    # only the leading element of a hyphenated or dotted word is judged
+    $word = (split(/[-.\/_]/, $word))[0];
+    return () unless defined($word) && length($word);
+    return () if $word =~ /^\p{Lu}/;
 
-        # only the leading element of a hyphenated or dotted word is judged
-        $word = (split(/[-.\/_]/, $word))[0];
-        next unless defined($word) && length($word);
-
-        next if $word =~ /^\p{Lu}/;
-
-        my $edge = ($index == 0 || $index == $#words);
-        next if !$edge && $MINOR_WORDS{lc($word)};
-
-        push(@offenders, $word);
-    }
-
-    return () unless @offenders;
-    return ('the summary line is not in Title Case, capitalize ' . join(', ', @offenders));
+    return ("the summary line must open with a capital, capitalize $word");
 }
 
 sub check_body {
@@ -267,7 +247,7 @@ sub check_body {
 
     my @body = @lines[2 .. $#lines];
     push(@errors, 'the body is empty, drop it or write a description')
-        unless grep { /\S/ } @body;
+      unless grep { /\S/ } @body;
 
     my $listed = 0;
     my $long   = 0;
@@ -297,7 +277,7 @@ sub annotate {
 
     my @notes = ("$MARKER the commit message was rejected");
     push(@notes, "$MARKER   - $_") for @{$errors};
-    push(@notes, $MARKER, map { "$MARKER $_" } format_rules());
+    push(@notes, $MARKER,   map { "$MARKER $_" } format_rules());
     push(@notes, "$MARKER", "$MARKER empty the message to abandon the commit");
 
     # slot the complaints in ahead of Git's own comments and the verbose diff so
@@ -326,14 +306,14 @@ sub format_rules {
     return (
         'the expected format is',
         '',
-        '    [TAG] Title Cased Short Summary',
+        '    [TAG] Short summary opening with a capital',
         '',
         '    A description written in prose, wrapped at 72 characters. The body',
-        '    is optional, a tag and a Title Cased summary line on their own are',
-        '    a complete message.',
+        '    is optional, a tag and a summary line on their own are a complete',
+        '    message.',
         '',
         'the tags are ' . join(', ', map { "[$_]" } @TAGS),
-        'the summary line must be Title Cased and must not end with a period',
+        'the summary line must open with a capital and must not end with a period',
         'the body must be prose, no bullet points and no numbered lists',
     );
 }
@@ -345,9 +325,8 @@ sub format_rules {
 sub launch_editor {
     my ($command, $path) = @_;
 
-    my $script = 'if ( exec </dev/tty >/dev/tty ) 2>/dev/null; '
-        . 'then exec </dev/tty >/dev/tty 2>/dev/tty; fi; '
-        . $command . ' "$@"';
+    my $script
+      = 'if ( exec </dev/tty >/dev/tty ) 2>/dev/null; ' . 'then exec </dev/tty >/dev/tty 2>/dev/tty; fi; ' . $command . ' "$@"';
 
     my $status = system('sh', '-c', $script, 'sh', $path);
     return -1 if $status == -1;

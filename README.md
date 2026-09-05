@@ -250,7 +250,7 @@ Everything under `home/.claude/`.
 | `perl` | Perl scripts and modules |
 | `python3` | Python scripts and packages |
 | `file-header` | Consistent metadata headers with correct comment syntax per language |
-| `commit` | Commit messages following the tag and Title Case conventions |
+| `commit` | Commit messages following the tag and capitalization conventions |
 | `github-cli` | `gh` workflows for issues, PRs, releases *(separate clone)* |
 | `discovery-tree` | Mermaid Discovery Tree task visualization |
 
